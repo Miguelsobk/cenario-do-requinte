@@ -78,7 +78,6 @@ const I18N = {
         p: "Conhecemos o Algarve propriedade a propriedade. Deixe-nos encontrar a sua — ou vender a que já tem.",
         btn: "Falar com um Consultor →"
       },
-      filters: { label: "Filtrar:", todos: "Todos" },
       why: {
         label: "Porque o Algarve",
         h2: "Um investimento com história.",
@@ -281,7 +280,6 @@ const I18N = {
         p: "We know the Algarve property by property. Let us find yours — or sell the one you already have.",
         btn: "Talk to a Consultant →"
       },
-      filters: { label: "Filter:", todos: "All" },
       why: {
         label: "Why the Algarve",
         h2: "An investment with history.",
@@ -484,7 +482,6 @@ const I18N = {
         p: "Znamy Algarve nieruchomość po nieruchomości. Pozwól nam znaleźć Twoją — albo sprzedać tę, którą już masz.",
         btn: "Porozmawiaj z Doradcą →"
       },
-      filters: { label: "Filtruj:", todos: "Wszystkie" },
       why: {
         label: "Dlaczego Algarve",
         h2: "Inwestycja z historią.",
