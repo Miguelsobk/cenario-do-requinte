@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Pedido Enviado — Cenário do Requinte</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="_shared.css">
+<style>
+.thanks {
+  min-height: 100vh;
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  text-align: center; padding: 8rem 1.5rem 4rem;
+  background: var(--navy); color: white;
+}
+.thanks-icon {
+  width: 72px; height: 72px; border-radius: 50%;
+  border: 1px solid var(--gold-lt);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.8rem; color: var(--gold-lt); margin-bottom: 2rem;
+}
+.thanks h1 {
+  font-family: var(--serif); font-weight: 300; font-size: clamp(2rem,4vw,2.8rem);
+  margin-bottom: 1.2rem;
+}
+.thanks p {
+  font-size: .95rem; line-height: 1.8; color: rgba(255,255,255,.65);
+  max-width: 440px; margin-bottom: 2.5rem;
+}
+</style>
+</head>
+<body>
+
+<div id="curtain"></div>
+<div id="cursor"></div>
+
+<nav id="nav">
+  <a class="nav-brand" href="index.html" data-page>
+    <div class="brand-badge">CR</div>
+    <span class="brand-name">Cenário do Requinte</span>
+  </a>
+  <ul class="nav-center">
+    <li><a href="index.html" data-page data-i18n="nav.inicio">Início</a></li>
+    <li><a href="gestao.html" data-page data-i18n="nav.gestao">Gestão de Propriedade</a></li>
+    <li><a href="comprar-vender.html" data-page data-i18n="nav.comprar">Comprar / Vender</a></li>
+    <li><a href="alugueres-ferias.html" data-page data-i18n="nav.alugueres">Alugueres de Férias</a></li>
+    <li><a href="index.html#sobre" data-page data-i18n="nav.sobre">Sobre Nós</a></li>
+    <li><a href="index.html#contacto" data-page data-i18n="nav.contacto">Contacto</a></li>
+  </ul>
+  <div class="nav-langs">
+    <button class="lang-btn active" data-lang="pt" title="Português" aria-label="Português">
+      <svg class="flag-icon" viewBox="0 0 30 20" xmlns="http://www.w3.org/2000/svg"><rect width="30" height="20" fill="#FF0000"/><rect width="12" height="20" fill="#046A38"/><circle cx="12" cy="10" r="3.6" fill="#FFCC00" stroke="#FF0000" stroke-width=".7"/></svg>
+    </button>
+    <button class="lang-btn" data-lang="en" title="English" aria-label="English">
+      <svg class="flag-icon" viewBox="0 0 30 20" xmlns="http://www.w3.org/2000/svg"><rect width="30" height="20" fill="#012169"/><path d="M0,0 L30,20 M30,0 L0,20" stroke="#fff" stroke-width="3.4"/><path d="M0,0 L30,20 M30,0 L0,20" stroke="#C8102E" stroke-width="1.2"/><path d="M15,0 V20 M0,10 H30" stroke="#fff" stroke-width="5.6"/><path d="M15,0 V20 M0,10 H30" stroke="#C8102E" stroke-width="3.2"/></svg>
+    </button>
+    <button class="lang-btn" data-lang="pl" title="Polski" aria-label="Polski">
+      <svg class="flag-icon" viewBox="0 0 30 20" xmlns="http://www.w3.org/2000/svg"><rect width="30" height="10" fill="#fff"/><rect y="10" width="30" height="10" fill="#DC143C"/></svg>
+    </button>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html" data-page data-i18n="nav.inicio">Início</a>
+  <a href="gestao.html" data-page data-i18n="nav.gestao">Gestão de Propriedade</a>
+  <a href="comprar-vender.html" data-page data-i18n="nav.comprar">Comprar / Vender</a>
+  <a href="alugueres-ferias.html" data-page data-i18n="nav.alugueres">Alugueres de Férias</a>
+  <a href="index.html#sobre" data-page data-i18n="nav.sobre">Sobre Nós</a>
+  <a href="index.html#contacto" data-page data-i18n="nav.contacto">Contacto</a>
+  <div class="mobile-menu-langs">
+    <button class="lang-btn active" data-lang="pt" title="Português" aria-label="Português">
+      <svg class="flag-icon" viewBox="0 0 30 20" xmlns="http://www.w3.org/2000/svg"><rect width="30" height="20" fill="#FF0000"/><rect width="12" height="20" fill="#046A38"/><circle cx="12" cy="10" r="3.6" fill="#FFCC00" stroke="#FF0000" stroke-width=".7"/></svg>
+    </button>
+    <button class="lang-btn" data-lang="en" title="English" aria-label="English">
+      <svg class="flag-icon" viewBox="0 0 30 20" xmlns="http://www.w3.org/2000/svg"><rect width="30" height="20" fill="#012169"/><path d="M0,0 L30,20 M30,0 L0,20" stroke="#fff" stroke-width="3.4"/><path d="M0,0 L30,20 M30,0 L0,20" stroke="#C8102E" stroke-width="1.2"/><path d="M15,0 V20 M0,10 H30" stroke="#fff" stroke-width="5.6"/><path d="M15,0 V20 M0,10 H30" stroke="#C8102E" stroke-width="3.2"/></svg>
+    </button>
+    <button class="lang-btn" data-lang="pl" title="Polski" aria-label="Polski">
+      <svg class="flag-icon" viewBox="0 0 30 20" xmlns="http://www.w3.org/2000/svg"><rect width="30" height="10" fill="#fff"/><rect y="10" width="30" height="10" fill="#DC143C"/></svg>
+    </button>
+  </div>
+</div>
+
+<div class="thanks">
+  <div class="thanks-icon">✓</div>
+  <h1 data-i18n="obrigado.h1">Pedido enviado com sucesso.</h1>
+  <p data-i18n="obrigado.p">Obrigado pelo seu contacto. A nossa equipa vai responder em menos de 24 horas.</p>
+  <a href="index.html" class="btn btn-gold" data-page data-i18n="common.voltarInicio">Voltar ao Início →</a>
+</div>
+
+<footer class="site-footer">
+  <span>© 2026 Cenário do Requinte · AMI 21009</span>
+  <div class="footer-links">
+    <a href="privacidade.html" data-page data-i18n="footer.privacidade">Privacidade</a><a href="termos.html" data-page data-i18n="footer.termos">Termos</a><a href="cookies.html" data-page data-i18n="footer.cookies">Cookies</a>
+  </div>
+</footer>
+
+<script src="_i18n.js"></script>
+<script src="_shared.js"></script>
+</body>
+</html>

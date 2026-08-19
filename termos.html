@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Termos de Utilização — Cenário do Requinte</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="_shared.css">
+<style>
+.legal-hero { background: var(--navy); padding: 12rem 3.5rem 4rem; }
+.legal-hero h1 { font-family: var(--serif); font-size: clamp(2rem,4vw,2.8rem); font-weight: 300; color: white; }
+.legal-hero p { font-size: .8rem; color: rgba(255,255,255,.5); margin-top: .8rem; }
+.legal-body { padding: 5rem 3.5rem 6rem; max-width: 760px; margin: 0 auto; }
+.legal-body h2 { font-family: var(--serif); font-size: 1.5rem; font-weight: 400; margin: 2.6rem 0 1rem; color: var(--navy); }
+.legal-body h2:first-child { margin-top: 0; }
+.legal-body p { font-size: .92rem; line-height: 1.85; color: var(--muted); margin-bottom: 1.2rem; }
+.legal-body ul { margin: 0 0 1.2rem 1.3rem; }
+.legal-body li { font-size: .92rem; line-height: 1.85; color: var(--muted); margin-bottom: .4rem; }
+.legal-body a { color: var(--gold); text-decoration: underline; text-underline-offset: 2px; }
+@media(max-width:900px){
+  .legal-hero { padding: 9rem 1.5rem 3rem; }
+  .legal-body { padding: 3.5rem 1.5rem 4rem; }
+}
+</style>
+</head>
+<body>
+
+<div id="curtain"></div>
+<div id="cursor"></div>
+
+<nav id="nav">
+  <a class="nav-brand" href="index.html" data-page>
+    <div class="brand-badge">CR</div>
+    <span class="brand-name">Cenário do Requinte</span>
+  </a>
+  <ul class="nav-center">
+    <li><a href="index.html" data-page data-i18n="nav.inicio">Início</a></li>
+    <li><a href="gestao.html" data-page data-i18n="nav.gestao">Gestão de Propriedade</a></li>
+    <li><a href="comprar-vender.html" data-page data-i18n="nav.comprar">Comprar / Vender</a></li>
+    <li><a href="alugueres-ferias.html" data-page data-i18n="nav.alugueres">Alugueres de Férias</a></li>
+    <li><a href="index.html#sobre" data-page data-i18n="nav.sobre">Sobre Nós</a></li>
+    <li><a href="index.html#contacto" data-page data-i18n="nav.contacto">Contacto</a></li>
+  </ul>
+  <div class="nav-langs">
+    <button class="lang-btn active" data-lang="pt" title="Português" aria-label="Português">
+      <svg class="flag-icon" viewBox="0 0 30 20" xmlns="http://www.w3.org/2000/svg"><rect width="30" height="20" fill="#FF0000"/><rect width="12" height="20" fill="#046A38"/><circle cx="12" cy="10" r="3.6" fill="#FFCC00" stroke="#FF0000" stroke-width=".7"/></svg>
+    </button>
+    <button class="lang-btn" data-lang="en" title="English" aria-label="English">
+      <svg class="flag-icon" viewBox="0 0 30 20" xmlns="http://www.w3.org/2000/svg"><rect width="30" height="20" fill="#012169"/><path d="M0,0 L30,20 M30,0 L0,20" stroke="#fff" stroke-width="3.4"/><path d="M0,0 L30,20 M30,0 L0,20" stroke="#C8102E" stroke-width="1.2"/><path d="M15,0 V20 M0,10 H30" stroke="#fff" stroke-width="5.6"/><path d="M15,0 V20 M0,10 H30" stroke="#C8102E" stroke-width="3.2"/></svg>
+    </button>
+    <button class="lang-btn" data-lang="pl" title="Polski" aria-label="Polski">
+      <svg class="flag-icon" viewBox="0 0 30 20" xmlns="http://www.w3.org/2000/svg"><rect width="30" height="10" fill="#fff"/><rect y="10" width="30" height="10" fill="#DC143C"/></svg>
+    </button>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html" data-page data-i18n="nav.inicio">Início</a>
+  <a href="gestao.html" data-page data-i18n="nav.gestao">Gestão de Propriedade</a>
+  <a href="comprar-vender.html" data-page data-i18n="nav.comprar">Comprar / Vender</a>
+  <a href="alugueres-ferias.html" data-page data-i18n="nav.alugueres">Alugueres de Férias</a>
+  <a href="index.html#sobre" data-page data-i18n="nav.sobre">Sobre Nós</a>
+  <a href="index.html#contacto" data-page data-i18n="nav.contacto">Contacto</a>
+  <div class="mobile-menu-langs">
+    <button class="lang-btn active" data-lang="pt" title="Português" aria-label="Português">
+      <svg class="flag-icon" viewBox="0 0 30 20" xmlns="http://www.w3.org/2000/svg"><rect width="30" height="20" fill="#FF0000"/><rect width="12" height="20" fill="#046A38"/><circle cx="12" cy="10" r="3.6" fill="#FFCC00" stroke="#FF0000" stroke-width=".7"/></svg>
+    </button>
+    <button class="lang-btn" data-lang="en" title="English" aria-label="English">
+      <svg class="flag-icon" viewBox="0 0 30 20" xmlns="http://www.w3.org/2000/svg"><rect width="30" height="20" fill="#012169"/><path d="M0,0 L30,20 M30,0 L0,20" stroke="#fff" stroke-width="3.4"/><path d="M0,0 L30,20 M30,0 L0,20" stroke="#C8102E" stroke-width="1.2"/><path d="M15,0 V20 M0,10 H30" stroke="#fff" stroke-width="5.6"/><path d="M15,0 V20 M0,10 H30" stroke="#C8102E" stroke-width="3.2"/></svg>
+    </button>
+    <button class="lang-btn" data-lang="pl" title="Polski" aria-label="Polski">
+      <svg class="flag-icon" viewBox="0 0 30 20" xmlns="http://www.w3.org/2000/svg"><rect width="30" height="10" fill="#fff"/><rect y="10" width="30" height="10" fill="#DC143C"/></svg>
+    </button>
+  </div>
+</div>
+
+<div class="legal-hero">
+  <h1>Termos de Utilização</h1>
+  <p>Última atualização: agosto de 2026</p>
+</div>
+
+<div class="legal-body">
+  <h2>Sobre este site</h2>
+  <p>Este site (cenariodorequinte.pt, ou o domínio onde esteja alojado) é propriedade da Cenário do Requinte (AMI 21009), agência de gestão de propriedade, compra, venda e arrendamento de curta duração no Algarve. Ao utilizar este site, aceita os termos descritos nesta página.</p>
+
+  <h2>Natureza informativa do site</h2>
+  <p>As informações sobre imóveis, preços, disponibilidade e comodidades apresentadas neste site têm caráter informativo e não constituem uma proposta contratual vinculativa. Todos os detalhes — incluindo preços, datas e condições — devem ser confirmados diretamente connosco antes de qualquer reserva, visita ou transação.</p>
+  <p>Nenhuma compra, arrendamento ou reserva é concluída através deste site. Os formulários de contacto servem apenas para iniciar uma conversa connosco.</p>
+
+  <h2>Imóveis de terceiros</h2>
+  <p>Alguns dos imóveis apresentados na secção "Alugueres de Férias" pertencem a proprietários terceiros que representamos ou com quem colaboramos.</p>
+
+  <h2>Propriedade intelectual</h2>
+  <p>As fotografias, textos e restante conteúdo deste site são propriedade da Cenário do Requinte ou são utilizados com autorização dos respetivos proprietários. Não é permitida a reprodução sem autorização prévia.</p>
+
+  <h2>Limitação de responsabilidade</h2>
+  <p>Fazemos os possíveis para manter a informação deste site atualizada e correta, mas não garantimos a ausência de erros ou omissões. Reservamo-nos o direito de corrigir qualquer informação a qualquer momento.</p>
+
+  <h2>Lei aplicável</h2>
+  <p>Estes termos regem-se pela lei portuguesa. Qualquer litígio relacionado com a utilização deste site será submetido aos tribunais competentes em Portugal.</p>
+
+  <h2>Contacto</h2>
+  <p>Para qualquer questão sobre estes termos, contacte-nos através de <a href="mailto:tomcio@sapo.pt">tomcio@sapo.pt</a>.</p>
+</div>
+
+<footer class="site-footer">
+  <span>© 2026 Cenário do Requinte · AMI 21009</span>
+  <div class="footer-links">
+    <a href="privacidade.html" data-i18n="footer.privacidade">Privacidade</a><a href="termos.html" data-i18n="footer.termos">Termos</a><a href="cookies.html" data-i18n="footer.cookies">Cookies</a>
+  </div>
+</footer>
+
+<script src="_i18n.js"></script>
+<script src="_shared.js"></script>
+</body>
+</html>

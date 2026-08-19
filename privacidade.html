@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Política de Privacidade — Cenário do Requinte</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="_shared.css">
+<style>
+.legal-hero { background: var(--navy); padding: 12rem 3.5rem 4rem; }
+.legal-hero h1 { font-family: var(--serif); font-size: clamp(2rem,4vw,2.8rem); font-weight: 300; color: white; }
+.legal-hero p { font-size: .8rem; color: rgba(255,255,255,.5); margin-top: .8rem; }
+.legal-body { padding: 5rem 3.5rem 6rem; max-width: 760px; margin: 0 auto; }
+.legal-body h2 { font-family: var(--serif); font-size: 1.5rem; font-weight: 400; margin: 2.6rem 0 1rem; color: var(--navy); }
+.legal-body h2:first-child { margin-top: 0; }
+.legal-body p { font-size: .92rem; line-height: 1.85; color: var(--muted); margin-bottom: 1.2rem; }
+.legal-body ul { margin: 0 0 1.2rem 1.3rem; }
+.legal-body li { font-size: .92rem; line-height: 1.85; color: var(--muted); margin-bottom: .4rem; }
+.legal-body a { color: var(--gold); text-decoration: underline; text-underline-offset: 2px; }
+@media(max-width:900px){
+  .legal-hero { padding: 9rem 1.5rem 3rem; }
+  .legal-body { padding: 3.5rem 1.5rem 4rem; }
+}
+</style>
+</head>
+<body>
+
+<div id="curtain"></div>
+<div id="cursor"></div>
+
+<nav id="nav">
+  <a class="nav-brand" href="index.html" data-page>
+    <div class="brand-badge">CR</div>
+    <span class="brand-name">Cenário do Requinte</span>
+  </a>
+  <ul class="nav-center">
+    <li><a href="index.html" data-page data-i18n="nav.inicio">Início</a></li>
+    <li><a href="gestao.html" data-page data-i18n="nav.gestao">Gestão de Propriedade</a></li>
+    <li><a href="comprar-vender.html" data-page data-i18n="nav.comprar">Comprar / Vender</a></li>
+    <li><a href="alugueres-ferias.html" data-page data-i18n="nav.alugueres">Alugueres de Férias</a></li>
+    <li><a href="index.html#sobre" data-page data-i18n="nav.sobre">Sobre Nós</a></li>
+    <li><a href="index.html#contacto" data-page data-i18n="nav.contacto">Contacto</a></li>
+  </ul>
+  <div class="nav-langs">
+    <button class="lang-btn active" data-lang="pt" title="Português" aria-label="Português">
+      <svg class="flag-icon" viewBox="0 0 30 20" xmlns="http://www.w3.org/2000/svg"><rect width="30" height="20" fill="#FF0000"/><rect width="12" height="20" fill="#046A38"/><circle cx="12" cy="10" r="3.6" fill="#FFCC00" stroke="#FF0000" stroke-width=".7"/></svg>
+    </button>
+    <button class="lang-btn" data-lang="en" title="English" aria-label="English">
+      <svg class="flag-icon" viewBox="0 0 30 20" xmlns="http://www.w3.org/2000/svg"><rect width="30" height="20" fill="#012169"/><path d="M0,0 L30,20 M30,0 L0,20" stroke="#fff" stroke-width="3.4"/><path d="M0,0 L30,20 M30,0 L0,20" stroke="#C8102E" stroke-width="1.2"/><path d="M15,0 V20 M0,10 H30" stroke="#fff" stroke-width="5.6"/><path d="M15,0 V20 M0,10 H30" stroke="#C8102E" stroke-width="3.2"/></svg>
+    </button>
+    <button class="lang-btn" data-lang="pl" title="Polski" aria-label="Polski">
+      <svg class="flag-icon" viewBox="0 0 30 20" xmlns="http://www.w3.org/2000/svg"><rect width="30" height="10" fill="#fff"/><rect y="10" width="30" height="10" fill="#DC143C"/></svg>
+    </button>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html" data-page data-i18n="nav.inicio">Início</a>
+  <a href="gestao.html" data-page data-i18n="nav.gestao">Gestão de Propriedade</a>
+  <a href="comprar-vender.html" data-page data-i18n="nav.comprar">Comprar / Vender</a>
+  <a href="alugueres-ferias.html" data-page data-i18n="nav.alugueres">Alugueres de Férias</a>
+  <a href="index.html#sobre" data-page data-i18n="nav.sobre">Sobre Nós</a>
+  <a href="index.html#contacto" data-page data-i18n="nav.contacto">Contacto</a>
+  <div class="mobile-menu-langs">
+    <button class="lang-btn active" data-lang="pt" title="Português" aria-label="Português">
+      <svg class="flag-icon" viewBox="0 0 30 20" xmlns="http://www.w3.org/2000/svg"><rect width="30" height="20" fill="#FF0000"/><rect width="12" height="20" fill="#046A38"/><circle cx="12" cy="10" r="3.6" fill="#FFCC00" stroke="#FF0000" stroke-width=".7"/></svg>
+    </button>
+    <button class="lang-btn" data-lang="en" title="English" aria-label="English">
+      <svg class="flag-icon" viewBox="0 0 30 20" xmlns="http://www.w3.org/2000/svg"><rect width="30" height="20" fill="#012169"/><path d="M0,0 L30,20 M30,0 L0,20" stroke="#fff" stroke-width="3.4"/><path d="M0,0 L30,20 M30,0 L0,20" stroke="#C8102E" stroke-width="1.2"/><path d="M15,0 V20 M0,10 H30" stroke="#fff" stroke-width="5.6"/><path d="M15,0 V20 M0,10 H30" stroke="#C8102E" stroke-width="3.2"/></svg>
+    </button>
+    <button class="lang-btn" data-lang="pl" title="Polski" aria-label="Polski">
+      <svg class="flag-icon" viewBox="0 0 30 20" xmlns="http://www.w3.org/2000/svg"><rect width="30" height="10" fill="#fff"/><rect y="10" width="30" height="10" fill="#DC143C"/></svg>
+    </button>
+  </div>
+</div>
+
+<div class="legal-hero">
+  <h1>Política de Privacidade</h1>
+  <p>Última atualização: agosto de 2026</p>
+</div>
+
+<div class="legal-body">
+  <h2>Quem somos</h2>
+  <p>A Cenário do Requinte (AMI 21009) é uma agência de gestão de propriedade, compra, venda e arrendamento de curta duração, sediada em Vilamoura, Algarve. Para questões sobre esta política, contacte-nos através de <a href="mailto:tomcio@sapo.pt">tomcio@sapo.pt</a>.</p>
+
+  <h2>Que dados recolhemos</h2>
+  <p>Recolhemos apenas os dados que nos fornece diretamente através dos formulários de contacto deste site: nome, apelido, email, mensagem e, quando aplicável, datas pretendidas de estadia ou informação sobre o imóvel de interesse.</p>
+  <p>O site guarda também, localmente no seu navegador, a sua preferência de idioma (Português, English ou Polski), para que não tenha de a escolher novamente em cada visita. Esta informação não sai do seu dispositivo nem é partilhada connosco.</p>
+
+  <h2>Para que usamos os seus dados</h2>
+  <ul>
+    <li>Para responder aos seus pedidos de informação, visita ou reserva;</li>
+    <li>Para lhe enviar uma proposta ou avaliação, quando solicitado;</li>
+    <li>Para cumprir obrigações legais, quando aplicável.</li>
+  </ul>
+  <p>Não vendemos nem partilhamos os seus dados com terceiros para fins de marketing.</p>
+
+  <h2>Serviços de terceiros que usamos</h2>
+  <p>Os formulários deste site são processados pelo serviço <a href="https://formsubmit.co" target="_blank" rel="noopener">FormSubmit.co</a>, que nos reencaminha as suas mensagens por email. Ao submeter um formulário, os seus dados passam pelos servidores desse serviço antes de chegarem até nós.</p>
+  <p>Se optar por nos contactar via WhatsApp, essa conversa é gerida diretamente pela Meta/WhatsApp, sujeita à respetiva política de privacidade.</p>
+
+  <h2>Quanto tempo guardamos os seus dados</h2>
+  <p>Guardamos os dados de contacto pelo tempo necessário para responder ao seu pedido e, quando exista uma relação comercial, durante o período legalmente exigido para fins fiscais e contratuais.</p>
+
+  <h2>Os seus direitos</h2>
+  <p>Nos termos do RGPD, tem o direito de aceder, corrigir, apagar ou pedir a portabilidade dos seus dados, bem como opor-se ao seu tratamento. Para exercer qualquer um destes direitos, contacte-nos através de <a href="mailto:tomcio@sapo.pt">tomcio@sapo.pt</a>.</p>
+
+  <h2>Alterações a esta política</h2>
+  <p>Podemos atualizar esta política ocasionalmente. A data da última atualização está indicada no topo desta página.</p>
+</div>
+
+<footer class="site-footer">
+  <span>© 2026 Cenário do Requinte · AMI 21009</span>
+  <div class="footer-links">
+    <a href="privacidade.html" data-i18n="footer.privacidade">Privacidade</a><a href="termos.html" data-i18n="footer.termos">Termos</a><a href="cookies.html" data-i18n="footer.cookies">Cookies</a>
+  </div>
+</footer>
+
+<script src="_i18n.js"></script>
+<script src="_shared.js"></script>
+</body>
+</html>

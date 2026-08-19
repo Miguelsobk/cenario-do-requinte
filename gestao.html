@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Gestão de Propriedade — Cenário do Requinte</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="_shared.css">
+<style>
+/* ── PAGE HERO ── */
+.page-hero {
+  padding: 14rem 3.5rem 6rem;
+  display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: end;
+  background: var(--navy);
+  position: relative; overflow: hidden;
+}
+.page-hero-img {
+  position: absolute; right: 0; top: 0; bottom: 0; width: 48%;
+  overflow: hidden;
+}
+.page-hero-img img {
+  width:100%; height:100%; object-fit:cover; opacity:.35;
+  filter: grayscale(15%) sepia(.1) saturate(.9) contrast(1.05);
+}
+.page-hero-body { position:relative; z-index:2; }
+.ph-label {
+  font-size:.68rem; letter-spacing:.3em; text-transform:uppercase;
+  color:var(--gold-lt); display:flex; align-items:center; gap:.8rem; margin-bottom:1.4rem;
+}
+.ph-label::before { content:''; width:2rem; height:1px; background:var(--gold-lt); }
+.page-hero h1 {
+  font-family:var(--serif); font-size: clamp(2.4rem,5vw,4rem);
+  font-weight:300; color:white; line-height:1.1; margin-bottom:1.4rem;
+}
+.page-hero h1 em { font-style:italic; }
+.page-hero p {
+  font-size:.95rem; line-height:1.85; color:rgba(255,255,255,.65);
+  max-width:420px; margin-bottom:2.2rem;
+}
+
+/* ── INCLUSION GRID ── */
+.inclusion {
+  padding: 7rem 3.5rem;
+  display: grid; grid-template-columns: 3fr 5fr; gap: 5rem;
+}
+.inclusion-intro h2 {
+  font-family:var(--serif); font-size: clamp(1.8rem,3vw,2.6rem);
+  font-weight:300; margin-bottom:1.2rem; line-height:1.18;
+}
+.inclusion-intro p {
+  font-size:.95rem; line-height:1.85; color:var(--muted);
+}
+.inclusion-list { display:grid; grid-template-columns:1fr 1fr; gap:0; }
+.inc-item {
+  padding: 1.6rem 0; border-bottom: 1px solid var(--sand);
+  display:flex; align-items:flex-start; gap:1rem;
+}
+.inc-item:nth-child(odd)  { padding-right:2rem; border-right:1px solid var(--sand); }
+.inc-item:nth-child(even) { padding-left:2rem; }
+.inc-icon { font-size:1.3rem; flex-shrink:0; margin-top:.1rem; color: var(--muted); }
+.inc-name { font-size:.95rem; font-weight:500; margin-bottom:.25rem; }
+.inc-desc { font-size:.8rem; line-height:1.65; color:var(--muted); }
+
+/* ── PROCESS ── */
+.process { background:var(--navy); padding:7rem 3.5rem; }
+.process-top {
+  display:flex; justify-content:space-between; align-items:flex-end;
+  border-bottom:1px solid rgba(255,255,255,.1); padding-bottom:2.5rem; margin-bottom:0;
+}
+.process-top h2 {
+  font-family:var(--serif); font-size: clamp(1.8rem,3vw,2.6rem);
+  font-weight:300; color:white; line-height:1.18;
+}
+.process-top p { font-size:.86rem; color:rgba(255,255,255,.60); max-width:340px; line-height:1.75; }
+.process-steps {}
+.proc-step {
+  display:grid; grid-template-columns:80px 1fr 1fr;
+  gap:2rem; align-items:center;
+  padding:2rem 0;
+  border-bottom:1px solid rgba(255,255,255,.08);
+  transition: background .3s;
+}
+.proc-step:hover { background:rgba(255,255,255,.02); }
+.proc-num {
+  font-family:var(--serif); font-size:2.5rem; font-weight:300;
+  color:rgba(255,255,255,.12); line-height:1;
+}
+.proc-title {
+  font-family:var(--serif); font-size:1.2rem; font-weight:400; color:white; margin-bottom:.3rem;
+}
+.proc-sub { font-size:.8rem; color:rgba(255,255,255,.4); }
+.proc-detail { font-size:.83rem; color:rgba(255,255,255,.4); line-height:1.7; }
+
+/* ── CONTACT STRIP ── */
+.contact-strip {
+  background:var(--cream-off);
+  padding:4rem 3.5rem;
+  display:flex; justify-content:space-between; align-items:center;
+  border-top:1px solid var(--sand);
+}
+.cs-text h3 { font-family:var(--serif); font-size:1.6rem; font-weight:300; margin-bottom:.4rem; }
+.cs-text p  { font-size:.86rem; color:var(--muted); }
+.cs-btns    { display:flex; gap:.9rem; }
+
+@media(max-width:900px){
+  .page-hero { grid-template-columns:1fr; padding:12rem 1.5rem 4rem; }
+  .page-hero-img { display:none; }
+  .inclusion { grid-template-columns:1fr; padding:5rem 1.5rem; gap:3rem; }
+  .inclusion-list { grid-template-columns:1fr; }
+  .inc-item:nth-child(odd) { border-right:none; padding-right:0; }
+  .inc-item:nth-child(even){ padding-left:0; }
+  .process { padding:5rem 1.5rem; }
+  .process-top { flex-direction:column; align-items:flex-start; gap:1rem; }
+  .proc-step { grid-template-columns:50px 1fr; }
+  .proc-detail { display:none; }
+  .contact-strip { flex-direction:column; gap:2rem; text-align:center; padding:3rem 1.5rem; }
+}
+</style>
+</head>
+<body>
+
+<div id="curtain"></div>
+<div id="cursor"></div>
+<svg style="display:none" aria-hidden="true">
+<symbol id="ic-bed" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M2 18v-6a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v6M2 18v2M22 18v2M2 12V8a1 1 0 0 1 1-1h5a1 1 0 0 1 1 1v4"/></symbol>
+<symbol id="ic-shower" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16M7 12V6a5 5 0 0 1 9-3M6 12v8a1 1 0 0 0 1 1h1M17 12v8a1 1 0 0 1-1 1h-1M9 16v1M12 16v1M15 16v1"/></symbol>
+<symbol id="ic-area" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></symbol>
+<symbol id="ic-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5c0-1 1-2 2-2h2l2 5-2 1a11 11 0 0 0 5 5l1-2 5 2v2c0 1-1 2-2 2C10 18 4 12 4 5z"/></symbol>
+<symbol id="ic-chat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-8.9 8.4 8.6 8.6 0 0 1-3.8-.9L3 21l1.9-5A8.4 8.4 0 1 1 21 11.5z"/></symbol>
+<symbol id="ic-envelope" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V6zM3 6l9 7 9-7"/></symbol>
+<symbol id="ic-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-7.4 7-12.6A7 7 0 0 0 5 9.4C5 14.6 12 22 12 22z"/><circle cx="12" cy="9" r="2.4"/></symbol>
+<symbol id="ic-building" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="3" width="12" height="18"/><path d="M9 7h1M14 7h1M9 11h1M14 11h1M9 15h1M14 15h1M10 21v-4h4v4"/></symbol>
+<symbol id="ic-parking" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M10 16V8h3.2a2.4 2.4 0 0 1 0 4.8H10"/></symbol>
+<symbol id="ic-euro" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6.5a6.5 6.5 0 1 0 0 11M4 10h9M4 13.5h9"/></symbol>
+<symbol id="ic-bank" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10l9-6 9 6M4 10v9M20 10v9M8 10v9M16 10v9M2 19h20M2 10h20"/></symbol>
+<symbol id="ic-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z"/></symbol>
+<symbol id="ic-contract" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="4" width="14" height="17" rx="1"/><path d="M9 3h6v3H9zM8 10h8M8 14h8M8 18h5"/></symbol>
+<symbol id="ic-house" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11l8-7 8 7M6 10v10h12V10"/></symbol>
+<symbol id="ic-wrench" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 0 0-5.4 5l-6 6 2.4 2.4 6-6a4 4 0 0 0 5-5.4l-2.6 2.6-2.4-2.4 2.6-2.6z"/></symbol>
+<symbol id="ic-sparkle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.5 4.5L18 9l-4.5 1.5L12 15l-1.5-4.5L6 9l4.5-1.5L12 3z"/><path d="M19 15l.8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8L19 15z"/></symbol>
+<symbol id="ic-key" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="15" r="3.5"/><path d="M10.5 12.5L18 5M18 5l2 2M15 8l2 2"/></symbol>
+<symbol id="ic-chart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 20V10M12 20V4M19 20v-7"/></symbol>
+<symbol id="ic-calendar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="5" width="16" height="15" rx="1"/><path d="M4 9h16M8 3v4M16 3v4"/></symbol>
+<symbol id="ic-leaf" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20C4 10 12 4 20 4c0 8-6 16-16 16z"/><path d="M4 20c2-6 6-10 12-12"/></symbol>
+<symbol id="ic-trendup" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 8-8M21 7h-6v6"/></symbol>
+<symbol id="ic-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2 12h3M19 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/></symbol>
+<symbol id="ic-scales" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18M5 7h14M7 7l-3 6a3 3 0 0 0 6 0l-3-6zM17 7l-3 6a3 3 0 0 0 6 0l-3-6zM8 21h8"/></symbol>
+<symbol id="ic-users" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="3.2"/><path d="M5 21c0-3.9 3.1-7 7-7s7 3.1 7 7"/></symbol>
+<symbol id="ic-star" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.6 5.6 6.2.6-4.6 4.2 1.3 6.1L12 16.6 6.5 19.5l1.3-6.1L3.2 9.2l6.2-.6L12 3z"/></symbol>
+</svg>
+
+<nav id="nav">
+  <a class="nav-brand" href="index.html" data-page>
+    <div class="brand-badge">CR</div>
+    <span class="brand-name">Cenário do Requinte</span>
+  </a>
+  <ul class="nav-center">
+    <li><a href="index.html" data-page data-i18n="nav.inicio">Início</a></li>
+    <li><a href="gestao.html" data-page data-i18n="nav.gestao">Gestão de Propriedade</a></li>
+    <li><a href="comprar-vender.html" data-page data-i18n="nav.comprar">Comprar / Vender</a></li>
+    <li><a href="alugueres-ferias.html" data-page data-i18n="nav.alugueres">Alugueres de Férias</a></li>
+    <li><a href="index.html#sobre" data-page data-i18n="nav.sobre">Sobre Nós</a></li>
+    <li><a href="index.html#contacto" data-page data-i18n="nav.contacto">Contacto</a></li>
+  </ul>
+  <div class="nav-langs">
+    <button class="lang-btn active" data-lang="pt" title="Português" aria-label="Português">
+      <svg class="flag-icon" viewBox="0 0 30 20" xmlns="http://www.w3.org/2000/svg"><rect width="30" height="20" fill="#FF0000"/><rect width="12" height="20" fill="#046A38"/><circle cx="12" cy="10" r="3.6" fill="#FFCC00" stroke="#FF0000" stroke-width=".7"/></svg>
+    </button>
+    <button class="lang-btn" data-lang="en" title="English" aria-label="English">
+      <svg class="flag-icon" viewBox="0 0 30 20" xmlns="http://www.w3.org/2000/svg"><rect width="30" height="20" fill="#012169"/><path d="M0,0 L30,20 M30,0 L0,20" stroke="#fff" stroke-width="3.4"/><path d="M0,0 L30,20 M30,0 L0,20" stroke="#C8102E" stroke-width="1.2"/><path d="M15,0 V20 M0,10 H30" stroke="#fff" stroke-width="5.6"/><path d="M15,0 V20 M0,10 H30" stroke="#C8102E" stroke-width="3.2"/></svg>
+    </button>
+    <button class="lang-btn" data-lang="pl" title="Polski" aria-label="Polski">
+      <svg class="flag-icon" viewBox="0 0 30 20" xmlns="http://www.w3.org/2000/svg"><rect width="30" height="10" fill="#fff"/><rect y="10" width="30" height="10" fill="#DC143C"/></svg>
+    </button>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html" data-page data-i18n="nav.inicio">Início</a>
+  <a href="gestao.html" data-page data-i18n="nav.gestao">Gestão de Propriedade</a>
+  <a href="comprar-vender.html" data-page data-i18n="nav.comprar">Comprar / Vender</a>
+  <a href="alugueres-ferias.html" data-page data-i18n="nav.alugueres">Alugueres de Férias</a>
+  <a href="index.html#sobre" data-page data-i18n="nav.sobre">Sobre Nós</a>
+  <a href="index.html#contacto" data-page data-i18n="nav.contacto">Contacto</a>
+  <div class="mobile-menu-langs">
+    <button class="lang-btn active" data-lang="pt" title="Português" aria-label="Português">
+      <svg class="flag-icon" viewBox="0 0 30 20" xmlns="http://www.w3.org/2000/svg"><rect width="30" height="20" fill="#FF0000"/><rect width="12" height="20" fill="#046A38"/><circle cx="12" cy="10" r="3.6" fill="#FFCC00" stroke="#FF0000" stroke-width=".7"/></svg>
+    </button>
+    <button class="lang-btn" data-lang="en" title="English" aria-label="English">
+      <svg class="flag-icon" viewBox="0 0 30 20" xmlns="http://www.w3.org/2000/svg"><rect width="30" height="20" fill="#012169"/><path d="M0,0 L30,20 M30,0 L0,20" stroke="#fff" stroke-width="3.4"/><path d="M0,0 L30,20 M30,0 L0,20" stroke="#C8102E" stroke-width="1.2"/><path d="M15,0 V20 M0,10 H30" stroke="#fff" stroke-width="5.6"/><path d="M15,0 V20 M0,10 H30" stroke="#C8102E" stroke-width="3.2"/></svg>
+    </button>
+    <button class="lang-btn" data-lang="pl" title="Polski" aria-label="Polski">
+      <svg class="flag-icon" viewBox="0 0 30 20" xmlns="http://www.w3.org/2000/svg"><rect width="30" height="10" fill="#fff"/><rect y="10" width="30" height="10" fill="#DC143C"/></svg>
+    </button>
+  </div>
+</div>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <div class="page-hero-img">
+    <img src="images/banners/ruela-buganvilias.jpg" alt="Algarve">
+  </div>
+  <div class="page-hero-body">
+    <h1 data-reveal="up" data-reveal-delay="1" data-i18n="gestao.hero.h1">A sua casa,<br><em>cuidada como merece.</em></h1>
+    <p data-reveal="up" data-reveal-delay="2" data-i18n="gestao.hero.p">Para proprietários internacionais que querem ter uma casa no Algarve sem os problemas de a gerir à distância.</p>
+    <a href="#contacto" class="btn btn-gold" data-page data-reveal="up" data-reveal-delay="3" data-i18n="gestao.hero.btn">Pedir Proposta →</a>
+  </div>
+</div>
+
+<!-- O QUE INCLUI -->
+<section class="inclusion">
+  <div class="inclusion-intro">
+    <p style="font-size:.68rem;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);display:flex;align-items:center;gap:.8rem;margin-bottom:1.2rem;" data-reveal="left">
+      <span style="display:block;width:2rem;height:1px;background:var(--gold)"></span><span data-i18n="gestao.inclusion.label">O que inclui</span>
+    </p>
+    <h2 data-reveal="up" data-reveal-delay="1" data-i18n="gestao.inclusion.h2">Tudo o que a sua casa precisa.</h2>
+    <p data-reveal="up" data-reveal-delay="2" data-i18n="gestao.inclusion.p">Um serviço completo de gestão — da manutenção preventiva à comunicação com inquilinos — adaptado à sua situação.</p>
+  </div>
+  <div class="inclusion-list">
+    <div class="inc-item" data-reveal="up" data-reveal-delay="1">
+      <span class="inc-icon"><svg class="ic"><use href="#ic-house"/></svg></span>
+      <div><div class="inc-name" data-i18n="gestao.inclusion.i1.name">Vistorias regulares</div><p class="inc-desc" data-i18n="gestao.inclusion.i1.desc">Visitas mensais com relatório fotográfico enviado por email.</p></div>
+    </div>
+    <div class="inc-item" data-reveal="up" data-reveal-delay="2">
+      <span class="inc-icon"><svg class="ic"><use href="#ic-wrench"/></svg></span>
+      <div><div class="inc-name" data-i18n="gestao.inclusion.i2.name">Manutenção</div><p class="inc-desc" data-i18n="gestao.inclusion.i2.desc">Rede de profissionais de confiança para qualquer reparação.</p></div>
+    </div>
+    <div class="inc-item" data-reveal="up" data-reveal-delay="1">
+      <span class="inc-icon"><svg class="ic"><use href="#ic-sparkle"/></svg></span>
+      <div><div class="inc-name" data-i18n="gestao.inclusion.i3.name">Limpeza</div><p class="inc-desc" data-i18n="gestao.inclusion.i3.desc">Serviço de limpeza regular e preparação para chegada de hóspedes.</p></div>
+    </div>
+    <div class="inc-item" data-reveal="up" data-reveal-delay="2">
+      <span class="inc-icon"><svg class="ic"><use href="#ic-key"/></svg></span>
+      <div><div class="inc-name" data-i18n="gestao.inclusion.i4.name">Check-in / Check-out</div><p class="inc-desc" data-i18n="gestao.inclusion.i4.desc">Receção presencial, entrega de chaves e vistoria de saída.</p></div>
+    </div>
+    <div class="inc-item" data-reveal="up" data-reveal-delay="1">
+      <span class="inc-icon"><svg class="ic"><use href="#ic-chat"/></svg></span>
+      <div><div class="inc-name" data-i18n="gestao.inclusion.i5.name">Comunicação 24h</div><p class="inc-desc" data-i18n="gestao.inclusion.i5.desc">Contacto direto com a sua equipa. Resposta garantida em menos de 24h.</p></div>
+    </div>
+    <div class="inc-item" data-reveal="up" data-reveal-delay="2">
+      <span class="inc-icon"><svg class="ic"><use href="#ic-chart"/></svg></span>
+      <div><div class="inc-name" data-i18n="gestao.inclusion.i6.name">Relatório mensal</div><p class="inc-desc" data-i18n="gestao.inclusion.i6.desc">Resumo claro de tudo o que aconteceu na sua propriedade.</p></div>
+    </div>
+    <div class="inc-item" data-reveal="up" data-reveal-delay="1">
+      <span class="inc-icon"><svg class="ic"><use href="#ic-calendar"/></svg></span>
+      <div><div class="inc-name" data-i18n="gestao.inclusion.i7.name">Gestão de arrendamento</div><p class="inc-desc" data-i18n="gestao.inclusion.i7.desc">Publicação, comunicação e coordenação com plataformas como Airbnb.</p></div>
+    </div>
+    <div class="inc-item" data-reveal="up" data-reveal-delay="2">
+      <span class="inc-icon"><svg class="ic"><use href="#ic-leaf"/></svg></span>
+      <div><div class="inc-name" data-i18n="gestao.inclusion.i8.name">Jardinagem &amp; piscina</div><p class="inc-desc" data-i18n="gestao.inclusion.i8.desc">Manutenção de exteriores e tratamento de piscinas ao longo do ano.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- COMO FUNCIONA -->
+<section class="process">
+  <div class="process-top">
+    <h2 data-reveal="up" data-i18n="gestao.process.h2">Como funciona,<br>na prática.</h2>
+    <p data-reveal="right" data-i18n="gestao.process.p">Da primeira conversa à gestão contínua — um processo claro que foi pensado para dar tranquilidade.</p>
+  </div>
+  <div class="process-steps">
+    <div class="proc-step" data-reveal="up" data-reveal-delay="1">
+      <div class="proc-num">01</div>
+      <div>
+        <div class="proc-title" data-i18n="gestao.process.s1.title">Contacto inicial</div>
+        <div class="proc-sub" data-i18n="gestao.process.s1.sub">Conversa sem compromisso</div>
+      </div>
+      <div class="proc-detail" data-i18n="gestao.process.s1.detail">Conhecemos a sua propriedade e as suas expectativas. Visitamos, avaliamos e apresentamos uma proposta à medida.</div>
+    </div>
+    <div class="proc-step" data-reveal="up" data-reveal-delay="2">
+      <div class="proc-num">02</div>
+      <div>
+        <div class="proc-title" data-i18n="gestao.process.s2.title">Contrato de gestão</div>
+        <div class="proc-sub" data-i18n="gestao.process.s2.sub">Transparente e flexível</div>
+      </div>
+      <div class="proc-detail" data-i18n="gestao.process.s2.detail">Definimos o âmbito, a frequência de vistorias e as condições. Sem letras pequenas, sem surpresas.</div>
+    </div>
+    <div class="proc-step" data-reveal="up" data-reveal-delay="3">
+      <div class="proc-num">03</div>
+      <div>
+        <div class="proc-title" data-i18n="gestao.process.s3.title">Gestão ativa</div>
+        <div class="proc-sub" data-i18n="gestao.process.s3.sub">Presença local contínua</div>
+      </div>
+      <div class="proc-detail" data-i18n="gestao.process.s3.detail">A nossa equipa trata de tudo — desde o aparafuso que caiu até à substituição de um eletrodoméstico. Sempre com a sua aprovação.</div>
+    </div>
+    <div class="proc-step" data-reveal="up" data-reveal-delay="4">
+      <div class="proc-num">04</div>
+      <div>
+        <div class="proc-title" data-i18n="gestao.process.s4.title">Relatório mensal</div>
+        <div class="proc-sub" data-i18n="gestao.process.s4.sub">Sempre a par do que acontece</div>
+      </div>
+      <div class="proc-detail" data-i18n="gestao.process.s4.detail">Recebe um relatório com fotos, custos e estado da propriedade. Pode ver tudo no seu telemóvel, de onde estiver.</div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT STRIP -->
+<div class="contact-strip" id="contacto">
+  <div class="cs-text" data-reveal="left">
+    <h3 data-i18n="gestao.contact.h3">Pronto para dar o primeiro passo?</h3>
+    <p data-i18n="gestao.contact.p">Fale connosco — a consulta inicial é gratuita e sem compromisso.</p>
+  </div>
+  <div class="cs-btns" data-reveal="right">
+    <a href="mailto:tomcio@sapo.pt" class="btn btn-dark" data-i18n="common.enviarEmail">Enviar Email →</a>
+    <a href="https://wa.me/351919603459" class="btn btn-gold" data-i18n="common.whatsapp"><svg class="ic"><use href="#ic-chat"/></svg> WhatsApp</a>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <span>© 2026 Cenário do Requinte · AMI 21009</span>
+  <div class="footer-links">
+    <a href="privacidade.html" data-page data-i18n="footer.privacidade">Privacidade</a><a href="termos.html" data-page data-i18n="footer.termos">Termos</a><a href="cookies.html" data-page data-i18n="footer.cookies">Cookies</a>
+  </div>
+</footer>
+
+<script src="_i18n.js"></script>
+<script src="_shared.js"></script>
+</body>
+</html>
