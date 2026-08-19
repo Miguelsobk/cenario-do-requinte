@@ -106,7 +106,6 @@ const I18N = {
     },
     obrigado: { h1: "Pedido enviado com sucesso.", p: "Obrigado pelo seu contacto. A nossa equipa vai responder em menos de 24 horas." },
     listing23a: {
-      label: "ONE Vilamoura · Fração 23-A",
       title: "T3 amplo com piscina e jardins,<br><em>a poucos minutos da marina.</em>",
       sub: "156,17 m² distribuídos por 3 quartos, sala ampla com terraço, 4 casas de banho e lugar de garagem próprio — no empreendimento ONE Vilamoura, com piscina e jardins exuberantes.",
       negotiable: "Negociável",
@@ -130,7 +129,6 @@ const I18N = {
       phMsg: "Gostaria de agendar uma visita…"
     },
     listing03c: {
-      label: "Villa Nature · Fração 0.3.C",
       title: "Um T1 raro,<br><em>com piscina privativa e jardim.</em>",
       sub: "120 m² entre interior e terraço, no rés-do-chão do Villa Nature — com piscina privativa, jardim próprio e acesso direto à piscina comum do condomínio.",
       priceOnRequest: "Preço sob consulta",
@@ -308,7 +306,6 @@ const I18N = {
     },
     obrigado: { h1: "Request sent successfully.", p: "Thank you for contacting us. Our team will respond within 24 hours." },
     listing23a: {
-      label: "ONE Vilamoura · Unit 23-A",
       title: "Spacious 3-bed with pool and gardens,<br><em>minutes from the marina.</em>",
       sub: "156.17 m² across 3 bedrooms, a large living room with terrace, 4 bathrooms and a private parking space — in the ONE Vilamoura development, with pool and lush gardens.",
       negotiable: "Negotiable",
@@ -332,7 +329,6 @@ const I18N = {
       phMsg: "I would like to schedule a visit…"
     },
     listing03c: {
-      label: "Villa Nature · Unit 0.3.C",
       title: "A rare 1-bed with<br><em>private pool and garden.</em>",
       sub: "120 m² between interior and terrace, on the ground floor of Villa Nature — with a private pool, its own garden, and direct access to the condominium's shared pool.",
       priceOnRequest: "Price on request",
@@ -510,7 +506,6 @@ const I18N = {
     },
     obrigado: { h1: "Zapytanie zostało wysłane.", p: "Dziękujemy za kontakt. Nasz zespół odpowie w ciągu 24 godzin." },
     listing23a: {
-      label: "ONE Vilamoura · Lokal 23-A",
       title: "Przestronne 3-pokojowe mieszkanie z basenem i ogrodami,<br><em>kilka minut od mariny.</em>",
       sub: "156,17 m² — 3 sypialnie, przestronny salon z tarasem, 4 łazienki i własne miejsce parkingowe — w inwestycji ONE Vilamoura, z basenem i bujnymi ogrodami.",
       negotiable: "Cena do negocjacji",
@@ -534,7 +529,6 @@ const I18N = {
       phMsg: "Chciałbym umówić wizytę…"
     },
     listing03c: {
-      label: "Villa Nature · Lokal 0.3.C",
       title: "Rzadkie mieszkanie 1-pokojowe<br><em>z prywatnym basenem i ogrodem.</em>",
       sub: "120 m² (wnętrze i taras) na parterze Villa Nature — z prywatnym basenem, własnym ogrodem oraz bezpośrednim dostępem do wspólnego basenu.",
       priceOnRequest: "Cena na zapytanie",
