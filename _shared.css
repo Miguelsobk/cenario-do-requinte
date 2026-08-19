@@ -58,6 +58,9 @@ body::before {
   mix-blend-mode: multiply;
 }
 #cursor.hover { width: 40px; height: 40px; opacity: .35; background: var(--navy); }
+@media (hover: none), (pointer: coarse) {
+  #cursor { display: none; }
+}
 
 /* ── NAV ── */
 #nav {
