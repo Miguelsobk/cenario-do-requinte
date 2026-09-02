@@ -30,7 +30,7 @@ const I18N = {
       sobre: {
         label: "Sobre Nós",
         h2: "Uma equipa local<br>que conhece cada pedra.",
-        p: "Fundada no Algarve, a Cenário do Requinte nasceu da necessidade real que proprietários internacionais têm de confiar a sua casa a alguém. Não somos uma plataforma — somos pessoas.",
+        p: "Fundada no Algarve, a Cenário Real Estate nasceu da necessidade real que proprietários internacionais têm de confiar a sua casa a alguém. Não somos uma plataforma — somos pessoas.",
         p2: "A nossa história começou na hotelaria e na restauração de referência do Algarve, onde a hospitalidade genuína nunca foi um detalhe — foi sempre o padrão. É essa mesma exigência que aplicamos hoje a cada casa que gerimos.",
         stat1: "Sem Intermediários Nem Call Centers", stat1num: "Direto", stat2: "Disponíveis Quando Precisar", stat2num: "Sempre",
         btn: "Falar com a Equipa →"
@@ -230,7 +230,7 @@ const I18N = {
       sobre: {
         label: "About Us",
         h2: "A local team<br>that knows every stone.",
-        p: "Founded in the Algarve, Cenário do Requinte was born from the real need international owners have to trust their home to someone. We're not a platform — we're people.",
+        p: "Founded in the Algarve, Cenário Real Estate was born from the real need international owners have to trust their home to someone. We're not a platform — we're people.",
         p2: "Our story began in reference-standard hospitality and restaurant service in the Algarve, where genuine hospitality was never a detail — it was always the standard. That same standard is what we bring to every home we manage.",
         stat1: "No Middlemen, No Call Centres", stat1num: "Direct", stat2: "Available When You Need Us", stat2num: "Always",
         btn: "Talk to Our Team →"
@@ -430,7 +430,7 @@ const I18N = {
       sobre: {
         label: "O Nas",
         h2: "Lokalny zespół,<br>który zna każdy kamień.",
-        p: "Założona na Algarve firma Cenário do Requinte powstała z realnej potrzeby zagranicznych właścicieli — potrzeby powierzenia swojego domu komuś zaufanemu. Nie jesteśmy platformą — jesteśmy ludźmi.",
+        p: "Założona na Algarve firma Cenário Real Estate powstała z realnej potrzeby zagranicznych właścicieli — potrzeby powierzenia swojego domu komuś zaufanemu. Nie jesteśmy platformą — jesteśmy ludźmi.",
         p2: "Nasza historia zaczęła się w renomowanym hotelarstwie i gastronomii na Algarve, gdzie prawdziwa gościnność nigdy nie była dodatkiem — zawsze była standardem. Ten sam standard stosujemy dziś w każdym domu, którym się zajmujemy.",
         stat1: "Bez Pośredników i Call Center", stat1num: "Bezpośrednio", stat2: "Dostępni, Gdy Potrzebujesz", stat2num: "Zawsze",
         btn: "Porozmawiaj z Zespołem →"
