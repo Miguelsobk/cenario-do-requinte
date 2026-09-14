@@ -22,7 +22,7 @@ const I18N = {
       services: {
         label: "Os Nossos Serviços",
         h2: "Como o<br>podemos ajudar.",
-        p: "Mais de uma década a cuidar de casas alheias como se fossem nossas. Presença local, comunicação clara, relatórios mensais — para que esteja descansado onde quer que esteja.",
+        p: "Mais de 20 anos a cuidar de casas alheias como se fossem nossas. Presença local, comunicação clara, relatórios mensais — para que esteja descansado onde quer que esteja.",
         btn: "Conhecer os Serviços →",
         card1: { name: "Gestão de Propriedade", desc: "Cuidamos da sua casa como se fosse nossa — manutenção, arrendamento e presença local enquanto está ausente.", cta: "Explorar →" },
         card2: { name: "Comprar &amp; Vender", desc: "A compra e venda como extensão natural da nossa relação com proprietários. Conhecemos o mercado melhor do que ninguém.", cta: "Explorar →" }
@@ -82,9 +82,9 @@ const I18N = {
         label: "Porque o Algarve",
         h2: "Um investimento com história.",
         p: "O Algarve é um dos mercados imobiliários mais estáveis da Europa, com procura constante por parte de compradores internacionais e retornos atrativos em arrendamento de curta duração.",
-        w1: { title: "Valorização consistente", desc: "O mercado do Algarve valorizou em média 8% ao ano na última década." },
-        w2: { title: "Procura turística elevada", desc: "Mais de 12 milhões de turistas por ano garantem retornos de arrendamento acima da média europeia." },
-        w3: { title: "Estabilidade jurídica", desc: "Portugal oferece segurança jurídica e fiscal para compradores estrangeiros, incluindo o programa NHR." }
+        w1: { title: "Valorização consistente", desc: "O mercado do Algarve tem mantido uma valorização consistente ao longo da última década, sustentada pela procura internacional." },
+        w2: { title: "Procura internacional", desc: "O Algarve continua a atrair compradores e visitantes de toda a Europa, sustentando um mercado imobiliário particularmente internacional." },
+        w3: { title: "Segurança na compra", desc: "Acompanhamos todo o processo e trabalhamos com parceiros jurídicos e fiscais especializados para que cada transação seja conduzida com clareza e segurança." }
       },
       sell: {
         h2: "Quer vender<br>a sua propriedade?",
@@ -222,7 +222,7 @@ const I18N = {
       services: {
         label: "Our Services",
         h2: "How we<br>can help.",
-        p: "Over a decade taking care of other people's homes as if they were our own. Local presence, clear communication, monthly reports — so you can relax wherever you are.",
+        p: "Over 20 years taking care of other people's homes as if they were our own. Local presence, clear communication, monthly reports — so you can relax wherever you are.",
         btn: "Discover Our Services →",
         card1: { name: "Property Management", desc: "We take care of your home as if it were our own — maintenance, renting and local presence while you're away.", cta: "Explore →" },
         card2: { name: "Buy &amp; Sell", desc: "Buying and selling as a natural extension of our relationship with owners. We know the market better than anyone.", cta: "Explore →" }
@@ -282,9 +282,9 @@ const I18N = {
         label: "Why the Algarve",
         h2: "An investment with history.",
         p: "The Algarve is one of the most stable real estate markets in Europe, with steady demand from international buyers and attractive short-term rental returns.",
-        w1: { title: "Consistent appreciation", desc: "The Algarve market has appreciated an average of 8% per year over the last decade." },
-        w2: { title: "High tourist demand", desc: "Over 12 million tourists a year ensure rental returns above the European average." },
-        w3: { title: "Legal stability", desc: "Portugal offers legal and tax security for foreign buyers, including the NHR programme." }
+        w1: { title: "Consistent appreciation", desc: "The Algarve market has maintained consistent value growth over the last decade, underpinned by strong international demand." },
+        w2: { title: "International demand", desc: "The Algarve continues to attract buyers and visitors from across Europe, sustaining a particularly international property market." },
+        w3: { title: "Buying with confidence", desc: "We guide you through the whole process and work with specialised legal and tax partners, so every transaction is handled with clarity and security." }
       },
       sell: {
         h2: "Want to sell<br>your property?",
@@ -422,7 +422,7 @@ const I18N = {
       services: {
         label: "Nasze Usługi",
         h2: "Jak możemy<br>Ci pomóc.",
-        p: "Ponad dekada opieki nad cudzymi domami, jakby były naszymi własnymi. Lokalna obecność, jasna komunikacja, miesięczne raporty — abyś mógł być spokojny, gdziekolwiek jesteś.",
+        p: "Ponad 20 lat opieki nad cudzymi domami, jakby były naszymi własnymi. Lokalna obecność, jasna komunikacja, miesięczne raporty — abyś mógł być spokojny, gdziekolwiek jesteś.",
         btn: "Poznaj Nasze Usługi →",
         card1: { name: "Zarządzanie Nieruchomością", desc: "Dbamy o Twój dom, jakby był naszym własnym — konserwacja, wynajem i lokalna obecność podczas Twojej nieobecności.", cta: "Odkryj →" },
         card2: { name: "Kup i Sprzedaj", desc: "Kupno i sprzedaż jako naturalne rozszerzenie naszej relacji z właścicielami. Znamy rynek lepiej niż ktokolwiek inny.", cta: "Odkryj →" }
@@ -482,9 +482,9 @@ const I18N = {
         label: "Dlaczego Algarve",
         h2: "Inwestycja z historią.",
         p: "Algarve to jeden z najbardziej stabilnych rynków nieruchomości w Europie, z ciągłym popytem ze strony zagranicznych nabywców i atrakcyjnymi zwrotami z wynajmu krótkoterminowego.",
-        w1: { title: "Stały wzrost wartości", desc: "Rynek Algarve zyskiwał na wartości średnio 8% rocznie w ostatniej dekadzie." },
-        w2: { title: "Wysoki popyt turystyczny", desc: "Ponad 12 milionów turystów rocznie zapewnia zwroty z wynajmu powyżej średniej europejskiej." },
-        w3: { title: "Stabilność prawna", desc: "Portugalia oferuje bezpieczeństwo prawne i podatkowe dla zagranicznych nabywców, w tym program NHR." }
+        w1: { title: "Stały wzrost wartości", desc: "Rynek Algarve utrzymuje stały wzrost wartości od dekady, wspierany silnym popytem międzynarodowym." },
+        w2: { title: "Popyt międzynarodowy", desc: "Algarve nadal przyciąga nabywców i odwiedzających z całej Europy, co czyni ten rynek nieruchomości wyjątkowo międzynarodowym." },
+        w3: { title: "Bezpieczeństwo zakupu", desc: "Prowadzimy Cię przez cały proces i współpracujemy ze specjalistycznymi partnerami prawnymi i podatkowymi, aby każda transakcja przebiegała jasno i bezpiecznie." }
       },
       sell: {
         h2: "Chcesz sprzedać<br>swoją nieruchomość?",
