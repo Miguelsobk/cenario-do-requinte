@@ -742,10 +742,20 @@ function applyLang(lang) {
   try { localStorage.setItem('cr_lang', lang); } catch (e) {}
 }
 
+function detectBrowserLang() {
+  const supported = ['pt', 'en', 'pl'];
+  const langs = (navigator.languages && navigator.languages.length) ? navigator.languages : [navigator.language || 'pt'];
+  for (const l of langs) {
+    const code = (l || '').toLowerCase().slice(0, 2);
+    if (supported.includes(code)) return code;
+  }
+  return 'pt';
+}
+
 function initI18n() {
-  let saved = 'pt';
-  try { saved = localStorage.getItem('cr_lang') || 'pt'; } catch (e) {}
-  applyLang(saved);
+  let saved = null;
+  try { saved = localStorage.getItem('cr_lang'); } catch (e) {}
+  applyLang(saved || detectBrowserLang());
   document.querySelectorAll('.lang-btn').forEach(b => {
     b.addEventListener('click', () => applyLang(b.dataset.lang));
   });
