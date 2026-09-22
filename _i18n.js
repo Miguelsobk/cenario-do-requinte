@@ -81,7 +81,7 @@ const I18N = {
       why: {
         label: "Porque o Algarve",
         h2: "Um investimento com história.",
-        p: "O Algarve é um dos mercados imobiliários mais estáveis da Europa, com procura constante por parte de compradores internacionais e retornos atrativos em arrendamento de curta duração.",
+        p: "O Algarve é um dos mercados imobiliários mais estáveis da Europa, com procura constante por parte de compradores internacionais e retornos atrativos em arrendamento.",
         w1: { title: "Valorização consistente", desc: "O mercado do Algarve tem mantido uma valorização consistente ao longo da última década, sustentada pela procura internacional." },
         w2: { title: "Procura internacional", desc: "O Algarve continua a atrair compradores e visitantes de toda a Europa, sustentando um mercado imobiliário particularmente internacional." },
         w3: { title: "Segurança na compra", desc: "Acompanhamos todo o processo e trabalhamos com parceiros jurídicos e fiscais especializados para que cada transação seja conduzida com clareza e segurança." }
@@ -319,7 +319,7 @@ const I18N = {
       why: {
         label: "Why the Algarve",
         h2: "An investment with history.",
-        p: "The Algarve is one of the most stable real estate markets in Europe, with steady demand from international buyers and attractive short-term rental returns.",
+        p: "The Algarve is one of the most stable real estate markets in Europe, with steady demand from international buyers and attractive rental returns.",
         w1: { title: "Consistent appreciation", desc: "The Algarve market has maintained consistent value growth over the last decade, underpinned by strong international demand." },
         w2: { title: "International demand", desc: "The Algarve continues to attract buyers and visitors from across Europe, sustaining a particularly international property market." },
         w3: { title: "Buying with confidence", desc: "We guide you through the whole process and work with specialised legal and tax partners, so every transaction is handled with clarity and security." }
@@ -557,7 +557,7 @@ const I18N = {
       why: {
         label: "Dlaczego Algarve",
         h2: "Inwestycja z historią.",
-        p: "Algarve to jeden z najbardziej stabilnych rynków nieruchomości w Europie, z ciągłym popytem ze strony zagranicznych nabywców i atrakcyjnymi zwrotami z wynajmu krótkoterminowego.",
+        p: "Algarve to jeden z najbardziej stabilnych rynków nieruchomości w Europie, z ciągłym popytem ze strony zagranicznych nabywców i atrakcyjnymi zwrotami z wynajmu.",
         w1: { title: "Stały wzrost wartości", desc: "Rynek Algarve utrzymuje stały wzrost wartości od dekady, wspierany silnym popytem międzynarodowym." },
         w2: { title: "Popyt międzynarodowy", desc: "Algarve nadal przyciąga nabywców i odwiedzających z całej Europy, co czyni ten rynek nieruchomości wyjątkowo międzynarodowym." },
         w3: { title: "Bezpieczeństwo zakupu", desc: "Prowadzimy Cię przez cały proces i współpracujemy ze specjalistycznymi partnerami prawnymi i podatkowymi, aby każda transakcja przebiegała jasno i bezpiecznie." }
