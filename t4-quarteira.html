@@ -54,8 +54,18 @@
 }
 .p-hero-price {
   font-family: var(--serif); font-size: 1.8rem; color: var(--gold-lt);
-  margin-bottom: 1.6rem;
+  margin-bottom: 1.2rem;
 }
+.energy-cert { display: flex; align-items: center; gap: .7rem; margin-bottom: 1.8rem; }
+.energy-badge {
+  display: flex; align-items: center; justify-content: center;
+  width: 2.2rem; height: 1.7rem; flex-shrink: 0;
+  font-family: var(--sans); font-weight: 700; font-size: .92rem; color: white;
+  clip-path: polygon(0 0, 82% 0, 100% 50%, 82% 100%, 0 100%);
+}
+.energy-a { background: #35a835; }
+.energy-d { background: #f7941d; }
+.energy-label { font-size: .72rem; letter-spacing: .08em; text-transform: uppercase; color: rgba(255,255,255,.55); }
 .p-hero-ctas { display: flex; gap: .9rem; flex-wrap: wrap; }
 
 /* ── FACTS BAR ── */
@@ -284,7 +294,11 @@
     <h1 data-reveal="up" data-reveal-delay="1" data-i18n="listingQuarteira.title">Duplex T4 com vista mar,<br><em>a 7 minutos da praia.</em></h1>
     <p data-reveal="up" data-reveal-delay="2" data-i18n="listingQuarteira.sub">171 m² distribuídos por 4 quartos e 3 casas de banho em dois pisos, com vista panorâmica sobre Quarteira e o oceano — e possibilidade de funcionar como dois apartamentos independentes.</p>
     <div class="p-hero-price" data-reveal="up" data-reveal-delay="3">€ 595.000</div>
-    <div class="p-hero-ctas" data-reveal="up" data-reveal-delay="4">
+    <div class="energy-cert" data-reveal="up" data-reveal-delay="4">
+      <span class="energy-badge energy-d">D</span>
+      <span class="energy-label" data-i18n="listingQuarteira.energyLabel">Certificado Energético</span>
+    </div>
+    <div class="p-hero-ctas" data-reveal="up" data-reveal-delay="5">
       <a href="#contacto" class="btn btn-light" data-page data-i18n="listingQuarteira.ctaVisit">Agendar Visita →</a>
       <a href="https://wa.me/351919603459" class="btn btn-ghost" data-i18n="common.whatsapp"><svg class="ic"><use href="#ic-chat"/></svg> WhatsApp</a>
     </div>
