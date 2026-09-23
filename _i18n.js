@@ -14,11 +14,8 @@ const I18N = {
         label: "Gestão · Compra · Arrendamento",
         h1: "A sua propriedade<br>no Algarve,<br><em>gerida como se fosse sua.</em>",
         sub: "Apoio local para proprietários internacionais. Tratamos de tudo — da manutenção ao arrendamento — enquanto não está cá.",
-        cta1: "Consulta Gratuita →", cta2: "Os Nossos Serviços",
-        badge: "Anos no Algarve"
+        cta1: "Consulta Gratuita →", cta2: "Os Nossos Serviços"
       },
-      marquee: { w1: "Comprar", w2: "Vender", w3: "Arrendar", w4: "Gerir", w5: "Cuidar", w6: "Confiar" },
-      stats: { s1: "Anos de Experiência no Algarve", s2: "Atendimento Pessoal, Não uma Plataforma", s2num: "100%" },
       services: {
         label: "Os Nossos Serviços",
         h2: "Como o<br>podemos ajudar.",
@@ -186,6 +183,28 @@ const I18N = {
       contactH2: "Interessado neste duplex?",
       phMsg: "Gostaria de agendar uma visita…"
     },
+    listingBranqueira: {
+      title: "Moradia em Banda T4,<br><em>terraços com vista mar.</em>",
+      sub: "240 m² distribuídos por cave, rés do chão e 1º andar, na tranquila zona da Branqueira — junto a Albufeira e Olhos de Água. Piscina comum, garagem para dois carros e amplos terraços virados a mar.",
+      factArea: "Área Útil", factRooms: "Quartos", factWc: "Casas de Banho",
+      factFloorsLbl: "Configuração", factFloorsVal: "Moradia em Banda",
+      factParkingLbl: "Estacionamento", factParkingVal: "Garagem (2 lug.)", factPrice: "Preço",
+      ctaVisit: "Agendar Visita →",
+      energyLabel: "Certificado Energético",
+      descH2: "Uma moradia espaçosa, a poucos minutos das melhores praias.",
+      descP1: "Localizada na tranquila zona da Branqueira, esta moradia em banda combina espaço, conforto e uma vista deslumbrante sobre o mar — a apenas 5 minutos do centro de Albufeira e 10 minutos das praias de Santa Eulália e da Oura.",
+      descP2: "No rés do chão, um hall acolhedor dá acesso a uma cozinha totalmente equipada com despensa, um quarto em suite e uma ampla sala com lareira, com ligação direta a um terraço com churrasqueira e à zona da piscina comum. No primeiro piso, três quartos de excelentes dimensões — um deles em suite — dois deles com acesso a um generoso terraço com vista mar.",
+      descP3: "Na cave, uma espaçosa garagem para pelo menos dois carros. A casa conta ainda com estores térmicos e elétricos, ar condicionado, aquecimento central, aspiração central e sistema de alarme.",
+      compTitle: "Composição, Piso a Piso",
+      compL1: "Rés do Chão", compL1a: "Hall de entrada",
+      compL1b: "Cozinha totalmente equipada, com despensa", compL1c: "1 quarto com roupeiros embutidos, em suite",
+      compL1d: "1 casa de banho de apoio", compL1e: "Sala de estar ampla com lareira, com acesso a terraço com churrasqueira e à piscina",
+      compL2: "1º Piso", compL2a: "3 quartos com roupeiros embutidos, um deles em suite",
+      compL2b: "2 casas de banho", compL2c: "2 dos quartos com acesso a terraço com vista mar",
+      compL3: "Cave", compL3a: "Garagem para pelo menos 2 carros",
+      contactH2: "Interessado nesta moradia?",
+      phMsg: "Gostaria de agendar uma visita…"
+    },
     ferias: {
       hub: {
         label: "Alugueres de Férias",
@@ -254,11 +273,8 @@ const I18N = {
         label: "Management · Buying · Renting",
         h1: "Your property<br>in the Algarve,<br><em>managed as if it were your own.</em>",
         sub: "Local support for international owners. We handle everything — from maintenance to renting — while you're away.",
-        cta1: "Free Consultation →", cta2: "Our Services",
-        badge: "Years in the Algarve"
+        cta1: "Free Consultation →", cta2: "Our Services"
       },
-      marquee: { w1: "Buy", w2: "Sell", w3: "Rent", w4: "Manage", w5: "Care", w6: "Trust" },
-      stats: { s1: "Years of Experience in the Algarve", s2: "Personal Service, Never a Platform", s2num: "100%" },
       services: {
         label: "Our Services",
         h2: "How we<br>can help.",
@@ -426,6 +442,28 @@ const I18N = {
       contactH2: "Interested in this duplex?",
       phMsg: "I'd like to schedule a visit…"
     },
+    listingBranqueira: {
+      title: "Terraced Villa T4,<br><em>terraces with sea views.</em>",
+      sub: "240 m² across basement, ground and first floor, in the quiet Branqueira area — next to Albufeira and Olhos de Água. Shared pool, two-car garage and generous sea-facing terraces.",
+      factArea: "Living Area", factRooms: "Bedrooms", factWc: "Bathrooms",
+      factFloorsLbl: "Layout", factFloorsVal: "Terraced Villa",
+      factParkingLbl: "Parking", factParkingVal: "Garage (2 cars)", factPrice: "Price",
+      ctaVisit: "Schedule a Visit →",
+      energyLabel: "Energy Performance Certificate",
+      descH2: "A spacious villa, minutes from the best beaches.",
+      descP1: "Located in the quiet Branqueira area, this terraced villa combines space, comfort and a stunning sea view — just 5 minutes from central Albufeira and 10 minutes from Santa Eulália and Oura beaches.",
+      descP2: "On the ground floor, a welcoming hall leads to a fully equipped kitchen with pantry, an en-suite bedroom and a spacious living room with fireplace, opening directly onto a terrace with barbecue and the shared pool area. On the first floor, three generously sized bedrooms — one en-suite — two of them with access to a large sea-view terrace.",
+      descP3: "In the basement, a spacious garage for at least two cars. The house also features thermal and electric shutters, air conditioning, central heating, central vacuum and an alarm system.",
+      compTitle: "Layout, Floor by Floor",
+      compL1: "Ground Floor", compL1a: "Entrance hall",
+      compL1b: "Fully equipped kitchen with pantry", compL1c: "1 en-suite bedroom with built-in wardrobes",
+      compL1d: "1 guest bathroom", compL1e: "Spacious living room with fireplace, opening onto a terrace with barbecue and pool",
+      compL2: "First Floor", compL2a: "3 bedrooms with built-in wardrobes, one en-suite",
+      compL2b: "2 bathrooms", compL2c: "2 of the bedrooms open onto a sea-view terrace",
+      compL3: "Basement", compL3a: "Garage for at least 2 cars",
+      contactH2: "Interested in this villa?",
+      phMsg: "I'd like to schedule a visit…"
+    },
     ferias: {
       hub: {
         label: "Holiday Rentals",
@@ -494,11 +532,8 @@ const I18N = {
         label: "Zarządzanie · Kupno · Wynajem",
         h1: "Twoja nieruchomość<br>na Algarve,<br><em>zarządzana jak Twoja własna.</em>",
         sub: "Lokalne wsparcie dla zagranicznych właścicieli. Zajmujemy się wszystkim — od konserwacji po wynajem — kiedy Ciebie tu nie ma.",
-        cta1: "Bezpłatna Konsultacja →", cta2: "Nasze Usługi",
-        badge: "Lat na Algarve"
+        cta1: "Bezpłatna Konsultacja →", cta2: "Nasze Usługi"
       },
-      marquee: { w1: "Kupować", w2: "Sprzedawać", w3: "Wynajmować", w4: "Zarządzać", w5: "Dbać", w6: "Ufać" },
-      stats: { s1: "Lat Doświadczenia na Algarve", s2: "Osobista Obsługa, Nigdy Platforma", s2num: "100%" },
       services: {
         label: "Nasze Usługi",
         h2: "Jak możemy<br>Ci pomóc.",
@@ -664,6 +699,28 @@ const I18N = {
       compL2c: "Duża przestrzeń dzienna z w pełni wyposażoną kuchnią",
       compL2d: "Bezpośredni dostęp do dużego tarasu, z panoramicznym widokiem na Quarteirę i ocean",
       contactH2: "Zainteresowany tym duplexem?",
+      phMsg: "Chciałbym umówić wizytę…"
+    },
+    listingBranqueira: {
+      title: "Dom szeregowy T4,<br><em>tarasy z widokiem na morze.</em>",
+      sub: "240 m² na piwnicę, parter i piętro, w spokojnej okolicy Branqueira — obok Albufeiry i Olhos de Água. Wspólny basen, garaż na dwa samochody i przestronne tarasy z widokiem na morze.",
+      factArea: "Powierzchnia Użytkowa", factRooms: "Sypialnie", factWc: "Łazienki",
+      factFloorsLbl: "Układ", factFloorsVal: "Dom Szeregowy",
+      factParkingLbl: "Parking", factParkingVal: "Garaż (2 aut.)", factPrice: "Cena",
+      ctaVisit: "Umów Wizytę →",
+      energyLabel: "Świadectwo Charakterystyki Energetycznej",
+      descH2: "Przestronny dom, kilka minut od najlepszych plaż.",
+      descP1: "Położony w spokojnej okolicy Branqueira, ten dom szeregowy łączy przestrzeń, komfort i zapierający dech widok na morze — zaledwie 5 minut od centrum Albufeiry i 10 minut od plaż Santa Eulália i Oura.",
+      descP2: "Na parterze przytulny hol prowadzi do w pełni wyposażonej kuchni ze spiżarnią, sypialni z łazienką i przestronnego salonu z kominkiem, z bezpośrednim wyjściem na taras z grillem i do wspólnego basenu. Na piętrze trzy przestronne sypialnie — jedna z łazienką — dwie z nich z dostępem do dużego tarasu z widokiem na morze.",
+      descP3: "W piwnicy przestronny garaż na co najmniej dwa samochody. Dom wyposażony jest również w rolety termiczne i elektryczne, klimatyzację, ogrzewanie centralne, odkurzacz centralny i system alarmowy.",
+      compTitle: "Układ, Piętro po Piętrze",
+      compL1: "Parter", compL1a: "Hol wejściowy",
+      compL1b: "W pełni wyposażona kuchnia ze spiżarnią", compL1c: "1 sypialnia z łazienką i szafami wnękowymi",
+      compL1d: "1 łazienka dla gości", compL1e: "Przestronny salon z kominkiem, z wyjściem na taras z grillem i basenem",
+      compL2: "Piętro", compL2a: "3 sypialnie z szafami wnękowymi, jedna z łazienką",
+      compL2b: "2 łazienki", compL2c: "2 sypialnie z dostępem do tarasu z widokiem na morze",
+      compL3: "Piwnica", compL3a: "Garaż na co najmniej 2 samochody",
+      contactH2: "Zainteresowany tym domem?",
       phMsg: "Chciałbym umówić wizytę…"
     },
     ferias: {
