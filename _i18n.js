@@ -230,6 +230,28 @@ const I18N = {
       contactH2: "Interessado nesta moradia?",
       phMsg: "Gostaria de agendar uma visita…"
     },
+    listingVilamouraTerraco: {
+      title: "Apartamento T1,<br><em>com terraço privado de 39 m².</em>",
+      sub: "59 m² num condomínio privado com piscina em Vilamoura, a poucos minutos a pé da praia e da Marina.",
+      factArea: "Área Útil", factRooms: "Quartos", factWc: "Casas de Banho",
+      factFloorsLbl: "Configuração", factFloorsVal: "Apartamento",
+      factTerraceLbl: "Terraço Privado", factPrice: "Preço",
+      ctaVisit: "Agendar Visita →",
+      energyLabel: "Certificado Energético",
+      descH2: "Conforto e privacidade, a dois passos da praia e da Marina.",
+      descP1: "Inserido num condomínio privado com piscina e amplas zonas verdes, este encantador apartamento T1 em Vilamoura destaca-se pelo seu generoso terraço privado de 39 m² com relvado — um espaço perfeito para desfrutar do clima do Algarve com total privacidade, resguardado por vegetação.",
+      descP2: "No interior, uma luminosa sala de estar com lareira tem acesso direto ao terraço, criando uma ligação harmoniosa entre os espaços interiores e exteriores. A kitchenette em conceito aberto, com balcão para refeições, proporciona um ambiente moderno e acolhedor. O apartamento dispõe ainda de um quarto espaçoso, uma casa de banho completa e excelente exposição solar.",
+      descP3: "Situado numa zona calma de Vilamoura, a curta distância a pé da praia e da Marina, com uma vasta oferta de restaurantes, cafés e comércio nas proximidades.",
+      compTitle: "Composição",
+      compA: "Sala de estar com lareira, acesso direto ao terraço",
+      compB: "Kitchenette em conceito aberto, com balcão de refeições",
+      compC: "1 quarto espaçoso",
+      compD: "1 casa de banho completa",
+      compE: "Terraço privado coberto de 39 m², com relvado",
+      compF: "Piscina comum e jardins do condomínio",
+      contactH2: "Interessado neste apartamento?",
+      phMsg: "Gostaria de agendar uma visita…"
+    },
     ferias: {
       hub: {
         label: "Alugueres de Férias",
@@ -514,6 +536,28 @@ const I18N = {
       contactH2: "Interested in this villa?",
       phMsg: "I'd like to schedule a visit…"
     },
+    listingVilamouraTerraco: {
+      title: "1-Bed Apartment,<br><em>with a 39 m² private terrace.</em>",
+      sub: "59 m² in a private condominium with pool in Vilamoura, a few minutes on foot from the beach and the Marina.",
+      factArea: "Living Area", factRooms: "Bedrooms", factWc: "Bathrooms",
+      factFloorsLbl: "Layout", factFloorsVal: "Apartment",
+      factTerraceLbl: "Private Terrace", factPrice: "Price",
+      ctaVisit: "Schedule a Visit →",
+      energyLabel: "Energy Performance Certificate",
+      descH2: "Comfort and privacy, steps from the beach and the Marina.",
+      descP1: "Set within a private condominium with a pool and generous green areas, this charming 1-bedroom apartment in Vilamoura stands out for its generous 39 m² private terrace with lawn — a perfect space to enjoy the Algarve climate in complete privacy, sheltered by greenery.",
+      descP2: "Inside, a bright living room with a fireplace opens directly onto the terrace, creating a seamless connection between indoor and outdoor spaces. The open-plan kitchenette, with a dining counter, offers a modern, welcoming feel. The apartment also has a spacious bedroom, a full bathroom and excellent sun exposure.",
+      descP3: "Located in a quiet area of Vilamoura, a short walk from the beach and the Marina, with a wide choice of restaurants, cafés and shops nearby.",
+      compTitle: "Layout",
+      compA: "Living room with fireplace, direct access to the terrace",
+      compB: "Open-plan kitchenette, with dining counter",
+      compC: "1 spacious bedroom",
+      compD: "1 full bathroom",
+      compE: "Covered private terrace of 39 m², with lawn",
+      compF: "Shared pool and condominium gardens",
+      contactH2: "Interested in this apartment?",
+      phMsg: "I'd like to schedule a visit…"
+    },
     ferias: {
       hub: {
         label: "Holiday Rentals",
@@ -796,6 +840,28 @@ const I18N = {
       compL2b: "2 łazienki, jedna przy sypialni głównej", compL2c: "Sypialnia główna z otwartym balkonem i otwartym widokiem",
       compL3: "Piwnica", compL3a: "Garaż na 2 do 3 samochodów, z potencjałem na pomieszczenie gospodarcze, warsztat lub siłownię",
       contactH2: "Zainteresowany tym domem?",
+      phMsg: "Chciałbym umówić wizytę…"
+    },
+    listingVilamouraTerraco: {
+      title: "Apartament 1-pokojowy,<br><em>z prywatnym tarasem 39 m².</em>",
+      sub: "59 m² w prywatnym osiedlu z basenem w Vilamoura, kilka minut pieszo od plaży i mariny.",
+      factArea: "Powierzchnia Użytkowa", factRooms: "Sypialnie", factWc: "Łazienki",
+      factFloorsLbl: "Układ", factFloorsVal: "Apartament",
+      factTerraceLbl: "Prywatny Taras", factPrice: "Cena",
+      ctaVisit: "Umów Wizytę →",
+      energyLabel: "Świadectwo Charakterystyki Energetycznej",
+      descH2: "Komfort i prywatność, kilka kroków od plaży i mariny.",
+      descP1: "Położony w prywatnym osiedlu z basenem i rozległymi terenami zielonymi, ten urokliwy 1-pokojowy apartament w Vilamoura wyróżnia się przestronnym, prywatnym tarasem 39 m² z trawnikiem — idealną przestrzenią do cieszenia się klimatem Algarve w pełnej prywatności, osłoniętą zielenią.",
+      descP2: "Wewnątrz jasny salon z kominkiem ma bezpośrednie wyjście na taras, tworząc płynne połączenie między wnętrzem a przestrzenią zewnętrzną. Otwarta kuchnia z blatem śniadaniowym zapewnia nowoczesny, przytulny klimat. Apartament posiada również przestronną sypialnię, pełną łazienkę i doskonałe nasłonecznienie.",
+      descP3: "Położony w spokojnej okolicy Vilamoura, kilka minut pieszo od plaży i mariny, z szerokim wyborem restauracji, kawiarni i sklepów w pobliżu.",
+      compTitle: "Układ",
+      compA: "Salon z kominkiem, bezpośrednie wyjście na taras",
+      compB: "Otwarta kuchnia, z blatem śniadaniowym",
+      compC: "1 przestronna sypialnia",
+      compD: "1 pełna łazienka",
+      compE: "Zadaszony prywatny taras 39 m², z trawnikiem",
+      compF: "Wspólny basen i ogrody osiedla",
+      contactH2: "Zainteresowany tym apartamentem?",
       phMsg: "Chciałbym umówić wizytę…"
     },
     ferias: {
