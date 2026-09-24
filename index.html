@@ -655,11 +655,17 @@
 <script src="_i18n.js"></script>
 <script src="_shared.js"></script>
 <script>
-// Parallax hero
+// Parallax hero (rAF-throttled so it doesn't run more than once per frame)
 const heroMedia = document.getElementById('heroMedia');
+let heroTicking = false;
 window.addEventListener('scroll', () => {
-  const y = window.scrollY;
-  if (y < window.innerHeight) heroMedia.style.transform = `translateY(${y * 0.22}px)`;
+  if (heroTicking) return;
+  heroTicking = true;
+  requestAnimationFrame(() => {
+    const y = window.scrollY;
+    if (y < window.innerHeight) heroMedia.style.transform = `translateY(${y * 0.22}px)`;
+    heroTicking = false;
+  });
 }, { passive: true });
 
 // Count-up on stats
