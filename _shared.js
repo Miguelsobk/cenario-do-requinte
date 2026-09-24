@@ -29,11 +29,22 @@ window.addEventListener('load', () => {
 });
 
 // ── NAV SCROLL ──
+// Two thresholds (not one) so the class doesn't flicker on/off when the
+// scroll position happens to hover right at the boundary.
 const nav = document.getElementById('nav');
+let navSolid = false;
+let navTicking = false;
 function updateNav() {
-  nav.classList.toggle('solid', window.scrollY > 60);
+  const y = window.scrollY;
+  if (!navSolid && y > 80) { navSolid = true; nav.classList.add('solid'); }
+  else if (navSolid && y < 40) { navSolid = false; nav.classList.remove('solid'); }
+  navTicking = false;
 }
-window.addEventListener('scroll', updateNav, { passive: true });
+window.addEventListener('scroll', () => {
+  if (navTicking) return;
+  navTicking = true;
+  requestAnimationFrame(updateNav);
+}, { passive: true });
 updateNav();
 
 // ── CURSOR ──
