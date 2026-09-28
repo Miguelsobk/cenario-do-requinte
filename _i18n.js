@@ -102,6 +102,13 @@ const I18N = {
         zonaQualquer: "Qualquer zona",
         phNome: "O seu nome", phApelido: "Apelido", phEmail: "email@exemplo.com", phMensagem: "Conte-nos o que procura…",
         submit: "Enviar Pedido →"
+      },
+      listings: {
+        geminada: "Moradia Geminada",
+        duplexVista: "Duplex Vista Mar",
+        banda: "Moradia em Banda",
+        pataVillagePrefix: "Moradia",
+        terraco: "Apartamento com Terraço"
       }
     },
     obrigado: { h1: "Pedido enviado com sucesso.", p: "Obrigado pelo seu contacto. A nossa equipa vai responder em menos de 24 horas." },
@@ -169,7 +176,7 @@ const I18N = {
       title: "Duplex T4 com vista mar,<br><em>a 7 minutos da praia.</em>",
       sub: "171 m² distribuídos por 4 quartos e 3 casas de banho em dois pisos, com vista panorâmica sobre Quarteira e o oceano — e possibilidade de funcionar como dois apartamentos independentes.",
       factArea: "Área Útil", factRooms: "Quartos", factWc: "Casas de Banho",
-      factFloorsLbl: "Configuração", factParkingLbl: "Estacionamento", factPrice: "Preço",
+      factFloorsLbl: "Configuração", factFloorsVal: "Duplex", factParkingLbl: "Estacionamento", factPrice: "Preço",
       ctaVisit: "Agendar Visita →",
       energyLabel: "Certificado Energético",
       descH2: "Um duplex com vista mar, pronto a habitar.",
@@ -408,6 +415,13 @@ const I18N = {
         zonaQualquer: "Any area",
         phNome: "Your name", phApelido: "Last name", phEmail: "email@example.com", phMensagem: "Tell us what you're looking for…",
         submit: "Send Request →"
+      },
+      listings: {
+        geminada: "Semi-Detached Villa",
+        duplexVista: "Sea View Duplex",
+        banda: "Terraced Villa",
+        pataVillagePrefix: "Villa",
+        terraco: "Apartment with Terrace"
       }
     },
     obrigado: { h1: "Request sent successfully.", p: "Thank you for contacting us. Our team will respond within 24 hours." },
@@ -475,7 +489,7 @@ const I18N = {
       title: "4-bed duplex with sea view,<br><em>7 minutes from the beach.</em>",
       sub: "171 m² across 4 bedrooms and 3 bathrooms over two floors, with panoramic views over Quarteira and the ocean — and the option to run as two independent apartments.",
       factArea: "Living Area", factRooms: "Bedrooms", factWc: "Bathrooms",
-      factFloorsLbl: "Layout", factParkingLbl: "Parking", factPrice: "Price",
+      factFloorsLbl: "Layout", factFloorsVal: "Duplex", factParkingLbl: "Parking", factPrice: "Price",
       ctaVisit: "Schedule a Visit →",
       energyLabel: "Energy Performance Certificate",
       descH2: "A move-in ready duplex with sea views.",
@@ -714,6 +728,13 @@ const I18N = {
         zonaQualquer: "Dowolna lokalizacja",
         phNome: "Twoje imię", phApelido: "Nazwisko", phEmail: "email@przyklad.com", phMensagem: "Powiedz nam, czego szukasz…",
         submit: "Wyślij Zapytanie →"
+      },
+      listings: {
+        geminada: "Bliźniak",
+        duplexVista: "Duplex z Widokiem na Morze",
+        banda: "Dom Szeregowy",
+        pataVillagePrefix: "Willa",
+        terraco: "Apartament z Tarasem"
       }
     },
     obrigado: { h1: "Zapytanie zostało wysłane.", p: "Dziękujemy za kontakt. Nasz zespół odpowie w ciągu 24 godzin." },
@@ -781,7 +802,7 @@ const I18N = {
       title: "Duplex 4-pokojowy z widokiem na morze,<br><em>7 minut od plaży.</em>",
       sub: "171 m² na 4 sypialnie i 3 łazienki na dwóch piętrach, z panoramicznym widokiem na Quarteirę i ocean — z możliwością podziału na dwa niezależne mieszkania.",
       factArea: "Powierzchnia Użytkowa", factRooms: "Sypialnie", factWc: "Łazienki",
-      factFloorsLbl: "Układ", factParkingLbl: "Parking", factPrice: "Cena",
+      factFloorsLbl: "Układ", factFloorsVal: "Dwupoziomowy", factParkingLbl: "Parking", factPrice: "Cena",
       ctaVisit: "Umów Wizytę →",
       energyLabel: "Świadectwo Charakterystyki Energetycznej",
       descH2: "Duplex gotowy do zamieszkania, z widokiem na morze.",
