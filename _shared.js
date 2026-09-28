@@ -12,21 +12,24 @@ document.querySelectorAll('a[data-page]').forEach(a => {
   });
 });
 
-// ── ON LOAD: reveal curtain out ──
-window.addEventListener('load', () => {
+// ── REVEAL CURTAIN OUT ──
+// #curtain covers by default (see _shared.css), so this page's own markup
+// is never visible "raw" while it loads. Runs as soon as this script
+// executes (the DOM above it is already parsed by then) rather than
+// waiting for window 'load', which stalls on every image and can take
+// long enough that the page flashes visible before the curtain catches up.
+(() => {
   const curtain = document.getElementById('curtain');
-  curtain.style.transform = 'translateY(0)';
   if (location.hash) {
     const target = document.querySelector(location.hash);
     if (target) target.scrollIntoView({ behavior: 'instant', block: 'start' });
   }
   requestAnimationFrame(() => {
     requestAnimationFrame(() => {
-      curtain.style.transform = '';
       curtain.classList.add('revealing');
     });
   });
-});
+})();
 
 // ── NAV SCROLL ──
 // Two thresholds (not one) so the class doesn't flicker on/off when the
@@ -65,6 +68,9 @@ document.querySelectorAll('a,button,.prop-card').forEach(el => {
 });
 
 // ── SCROLL REVEAL ──
+// Starts observing slightly after the curtain reveal (above) is done, so
+// content doesn't fade/slide in while the curtain is still moving — the
+// two animations would otherwise overlap and read as "busy".
 const revealObs = new IntersectionObserver((entries) => {
   entries.forEach(e => {
     if (e.isIntersecting) {
@@ -73,7 +79,9 @@ const revealObs = new IntersectionObserver((entries) => {
     }
   });
 }, { threshold: 0.1 });
-document.querySelectorAll('[data-reveal]').forEach(el => revealObs.observe(el));
+setTimeout(() => {
+  document.querySelectorAll('[data-reveal]').forEach(el => revealObs.observe(el));
+}, 500);
 
 // ── ACTIVE NAV LINK ──
 const path = window.location.pathname.split('/').pop() || 'index.html';

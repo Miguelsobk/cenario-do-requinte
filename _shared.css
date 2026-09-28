@@ -37,10 +37,13 @@ body::before {
 }
 
 /* ── PAGE TRANSITION CURTAIN ── */
+/* Covers by default (not off-screen) so a fresh page load is never visible
+   "raw" before the curtain is in place — only .revealing slides it away,
+   once, right after this page's own content is ready. */
 #curtain {
   position: fixed; inset: 0; z-index: 9000;
   background: var(--navy-deep);
-  transform: translateY(100%);
+  transform: translateY(0);
   pointer-events: none;
 }
 #curtain.covering  { animation: curtainIn  .45s cubic-bezier(.76,0,.24,1) forwards; }
