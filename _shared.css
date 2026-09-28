@@ -122,8 +122,10 @@ body::before {
   background:none; border:none; cursor:pointer; padding:0;
   line-height:0; border-radius:2px;
   opacity:.5; filter:grayscale(55%);
-  transition:opacity .25s, filter .25s, transform .2s;
+  transition:opacity .25s, filter .25s, transform .2s, color .4s;
+  text-decoration:none; font: inherit; color:white;
 }
+#nav.solid .lang-btn { color: var(--text); }
 .lang-btn:hover { opacity:1; filter:grayscale(0%); transform:translateY(-1px); }
 .lang-btn.active { opacity:1; filter:grayscale(0%); }
 .flag-icon {
