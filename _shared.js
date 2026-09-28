@@ -110,6 +110,3 @@ if (navToggle && mobileMenu) {
   mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', closeMobileMenu));
   document.addEventListener('keydown', e => { if (e.key === 'Escape') closeMobileMenu(); });
 }
-
-// ── LANG SELECTOR ──
-if (typeof initI18n === 'function') initI18n();
