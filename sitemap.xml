@@ -304,4 +304,25 @@
   <url>
     <loc>https://cenariorealestate.com/cookies.html</loc>
   </url>
+  <url>
+    <loc>https://cenariorealestate.com/t2-villa-nature.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://cenariorealestate.com/t2-villa-nature.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cenariorealestate.com/en/t2-villa-nature.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://cenariorealestate.com/pl/t2-villa-nature.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cenariorealestate.com/t2-villa-nature.html"/>
+  </url>
+  <url>
+    <loc>https://cenariorealestate.com/en/t2-villa-nature.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://cenariorealestate.com/t2-villa-nature.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cenariorealestate.com/en/t2-villa-nature.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://cenariorealestate.com/pl/t2-villa-nature.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cenariorealestate.com/t2-villa-nature.html"/>
+  </url>
+  <url>
+    <loc>https://cenariorealestate.com/pl/t2-villa-nature.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://cenariorealestate.com/t2-villa-nature.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cenariorealestate.com/en/t2-villa-nature.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://cenariorealestate.com/pl/t2-villa-nature.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cenariorealestate.com/t2-villa-nature.html"/>
+  </url>
 </urlset>
